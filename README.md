@@ -2,7 +2,7 @@
 
 ---
 
-### 📘 About the Project
+## 📘 About the Project
 
 This project demonstrates a complete CI/CD pipeline configured on a local machine using:
 - **GitHub** for code hosting and version control  
@@ -26,7 +26,7 @@ git push origin main
 ➡️ Build/test scripts are executed
 ➡️ WebEx Bot sends notification to WebEx space
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 GitHub (Code Repo + Webhook)
 
 Python (Sample App + Tests)
@@ -40,7 +40,8 @@ WebEx Bot (Bot Notifications)
 Shell Scripts (build.sh, test.sh)
 
 ✅ Tasks & Setup Guide
-### 1. 🧑‍💻 Set up a GitHub Repository
+
+## 1. 🧑‍💻 Set up a GitHub Repository
 Create a new repository and clone it locally
 
 Add simple Python code (sample_code.py)
@@ -60,7 +61,7 @@ git push origin main
 
 ```
 
-### 2. 🔔 Configure GitHub Webhook
+## 2. 🔔 Configure GitHub Webhook
 Go to Settings > Webhooks in your GitHub repo
 
 Add a Payload URL using your ngrok link:
@@ -70,7 +71,7 @@ Content type: application/json
 
 Events: Just the push event
 
-### 3. 🐳 Install Jenkins in Docker
+## 3. 🐳 Install Jenkins in Docker
 ``` bash
 Copy
 Edit
@@ -79,7 +80,7 @@ docker run -p 8080:8080 -p 50000:50000 --name jenkins \
 
 ```
 
-### 4. 🌐 Expose Jenkins with Ngrok
+## 4. 🌐 Expose Jenkins with Ngrok
 ``` bash
 Copy
 Edit
@@ -88,7 +89,7 @@ Use the https://<your-ngrok-subdomain>.ngrok.io URL for GitHub Webhook
 
 ```
 
-### 5. ⚙️ Configure Jenkins
+## 5. ⚙️ Configure Jenkins
 Install Plugins: GitHub Integration, Pipeline, Webhook, etc.
 
 Set up a new job:
@@ -109,7 +110,7 @@ chmod +x test.sh
 
 ```
 
-### 6. 🤖 Set Up WebEx Bot
+## 6. 🤖 Set Up WebEx Bot
 Go to https://developer.webex.com
 
 Create a bot and note:
@@ -118,7 +119,7 @@ Bot Access Token
 
 Room ID where it should send messages
 
-### 7. 📬 Jenkins → WebEx Notification Integration
+## 7. 📬 Jenkins → WebEx Notification Integration
 Install HTTP Request plugin in Jenkins
 
 Add a post-build action using a shell or webhook:
@@ -136,7 +137,7 @@ curl -X POST https://webexapis.com/v1/messages \
 
 ```
 
-### 8. 🧪 Test the Pipeline
+## 8. 🧪 Test the Pipeline
 Push code changes to GitHub:
 
 ``` bash
@@ -157,7 +158,7 @@ Jenkins runs test.sh
 
 WebEx bot sends a success or failure message to your space 🎉
 
-#### 🧪 Sample Output
+### 🧪 Sample Output
 GitHub shows successful push ✅
 
 Jenkins console output confirms build success ✅
