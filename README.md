@@ -16,7 +16,7 @@ The entire pipeline is triggered by a **code commit to GitHub**, which kicks off
 
 ## 🎥 Video Demonstration
 
-**YouTube**: [CI/CD Pipeline Jenkins](https://www.youtube.com/watch?v=GFT2e1lp3dE)
+**YouTube**: [CI/CD Pipeline Jenkins](https://youtu.be/jfV-gfRWisE)
 
 ---
 
