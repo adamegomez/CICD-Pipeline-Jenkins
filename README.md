@@ -14,6 +14,12 @@ The entire pipeline is triggered by a **code commit to GitHub**, which kicks off
 
 ---
 
+## 🎥 Video Demonstration
+
+**YouTube**: [CI/CD Pipeline Jenkins](https://www.youtube.com/watch?v=GFT2e1lp3dE)
+
+---
+
 ## 🔗 Pipeline Flow (Trigger on GitHub Commit)
 
 ```bash
