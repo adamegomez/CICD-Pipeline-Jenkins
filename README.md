@@ -2,7 +2,7 @@
 
 ---
 
-## 📘 About the Project
+### 📘 About the Project
 
 This project demonstrates a complete CI/CD pipeline configured on a local machine using:
 - **GitHub** for code hosting and version control  
